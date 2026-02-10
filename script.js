@@ -123,48 +123,8 @@ const observer = new IntersectionObserver((entries) => {
 
 revealElements.forEach(el => observer.observe(el));
 
-// Form submission
-const form = document.getElementById('sponsorForm');
-const formSuccess = document.getElementById('formSuccess');
+// Form is handled by FormSubmit.co - submissions go directly to reed.l.fisch@gmail.com
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(form);
-    const name = formData.get('name');
-    const company = formData.get('company') || 'Not specified';
-    const email = formData.get('_replyto');
-    const phone = formData.get('phone') || 'Not specified';
-    const tier = formData.get('tier') || 'Not specified';
-    const message = formData.get('message') || 'No message';
-
-    // Create email body
-    const subject = 'New Sponsorship Inquiry - Artemis 6621';
-    const body = `Name: ${name}
-Company: ${company}
-Email: ${email}
-Phone: ${phone}
-Sponsorship Tier: ${tier}
-
-Message:
-${message}`;
-
-    // Create mailto link
-    const mailtoLink = `mailto:reed.l.fisch@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    // Open email client
-    window.location.href = mailtoLink;
-
-    // Show success message
-    formSuccess.style.display = 'block';
-    form.reset();
-
-    // Hide success message after 5 seconds
-    setTimeout(() => {
-        formSuccess.style.display = 'none';
-    }, 5000);
-});
 
 // Parallax effect on hero
 window.addEventListener('scroll', () => {
