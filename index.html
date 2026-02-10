@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artemis 6621 - Chatham Robotics</title>
+    <meta name="description"
+        content="Chatham High School's FIRST Robotics Competition team, 2024 Tech Valley Regional Champions and World Championship competitors.">
+    <meta property="og:title" content="Artemis 6621 - Chatham Robotics">
+    <meta property="og:description" content="Small team, big wins. Supporting Columbia County's only FRC team.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo display-font">ARTEMIS <span>6621</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#story">About</a></li>
+                <li><a href="#sponsor">Sponsor</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+            </button>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">About</a></li>
+            <li><a href="#sponsor">Sponsor</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main id="main">
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        2024 World Championship Competitors
+                    </div>
+                    <h1 class="display-font">SMALL TEAM.<br>BIG WINS.</h1>
+                    <p class="hero-subtitle">Columbia County's only FIRST Robotics Competition team, proving that
+                        championship-caliber robots come from determination, not district size.</p>
+                    <div class="btn-group">
+                        <a href="#sponsor" class="btn btn-primary">Become a Sponsor</a>
+                        <a href="#story" class="btn btn-secondary">Our Championship Story</a>
+                    </div>
+                    <div class="hero-stats reveal-stagger">
+                        <div class="stat">
+                            <span class="stat-value">1st</span>
+                            <span class="stat-label">Tech Valley Regional</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">600+</span>
+                            <span class="stat-label">Teams at Worlds</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">20+</span>
+                            <span class="stat-label">Team Members</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">&lt;90</span>
+                            <span class="stat-label">Students per Class</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAH0AeADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWVkNZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU1Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z"
+                        alt="Artemis 6621 robot" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="photo-gallery-section">
+            <div class="container">
+                <div class="reveal">
+                    <div class="section-label">In Action</div>
+                    <h2 class="section-title">Championship Moments</h2>
+                </div>
+                <div class="gallery-grid reveal-stagger">
+                    <div class="gallery-item large">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAH0AeADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWVkNZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU1Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2tna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z"
+                            alt="Artemis 6621 robot at competition" loading="lazy">
+                        <div class="gallery-caption">Our 2024 robot competing at the World Championship in Houston</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAEsAeADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWVkNZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU1Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigD//Z"
+                            alt="Highest scoring match scoreboard" loading="lazy">
+                        <div class="gallery-caption">265 points, the highest score in our division</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCADIAyADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWVkNZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU1Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigD//Z"
+                            alt="Team at FIRST World Championship" loading="lazy">
+                        <div class="gallery-caption">Team Artemis 6621 at the World Championship</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="story-section">
+            <div class="container">
+                <div class="story-grid reveal-stagger">
+                    <div class="story-content">
+                        <div class="section-label">The Underdog Story</div>
+                        <h2 class="section-title">From Columbia County to the World Stage</h2>
+                        <p>Chatham High School is a small rural school where 42% of students qualify for free-reduced
+                            lunch. We have declining enrollment and fewer than 90 students per graduating class. Most
+                            teams we compete against come from districts 5-10x our size with dedicated tech labs and
+                            corporate sponsors.</p>
+                        <p>But here's what sets us apart: <strong>We refuse to charge students to participate.</strong>
+                            Every meal, every shirt, every travel expense — covered. Because talent shouldn't be limited
+                            by a family's bank account.</p>
+                        <h3>2024: The Championship Run</h3>
+                        <p>Last season, we won the Tech Valley Regional, earning our spot at the World Championship in
+                            Houston. At Worlds, we led our alliance to the <strong>highest-scoring match in our entire
+                                division</strong> and narrowly lost to the alliance that eventually won the division
+                            finals.</p>
+                        <p>For a team of our size, from a district of our resources, that's not just success —
+                            <strong>that's validation</strong>.
+                        </p>
+                        <p>Now we're building the next generation: we've established an FTC team at our middle school
+                            and a Lego League program at the Morris Memorial Center. Over 20 students are currently on
+                            our team, and we're growing.</p>
+                    </div>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <div class="achievement-year">2024</div>
+                            <div class="achievement-title">Tech Valley Regional, 1st Place</div>
+                            <div class="achievement-desc">Won our regional on the winning alliance, qualifying for the
+                                World Championship.</div>
+                        </div>
+                        <div class="achievement">
+                            <div class="achievement-year">2024</div>
+                            <div class="achievement-title">World Championship in Houston</div>
+                            <div class="achievement-desc">Highest-scoring match in our division. Reached division
+                                semifinals.</div>
+                        </div>
+                        <div class="achievement">
+                            <div class="achievement-year">2024</div>
+                            <div class="achievement-title">Creativity Award</div>
+                            <div class="achievement-desc">Recognized for innovative engineering solutions and design
+                                approach.</div>
+                        </div>
+                        <div class="achievement">
+                            <div class="achievement-year">2024</div>
+                            <div class="achievement-title">Dean's List Finalist</div>
+                            <div class="achievement-desc">One of the highest individual honors in FIRST Robotics.</div>
+                        </div>
+                        <div class="achievement">
+                            <div class="achievement-year">2024</div>
+                            <div class="achievement-title">Safety Captain Award</div>
+                            <div class="achievement-desc">Recognized for outstanding leadership in team safety
+                                protocols.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsor" class="tiers-section">
+            <div class="container">
+                <div class="tiers-intro reveal">
+                    <div class="section-label">Partnership Opportunities</div>
+                    <h2 class="section-title">Invest in the Future</h2>
+                    <p class="section-subtitle">Your sponsorship doesn't just fund robots, it funds dreams. Every dollar
+                        helps us prove that championship teams can come from anywhere.</p>
+                </div>
+                <div class="tiers-grid reveal-stagger">
+                    <div class="tier-card">
+                        <div class="tier-name display-font">HERMES</div>
+                        <div class="tier-amount">&lt;$250</div>
+                        <ul class="tier-benefits">
+                            <li>Company name on team banner</li>
+                            <li>Logo displayed at competitions</li>
+                            <li>Recognition on team website</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Sponsor Now</a>
+                    </div>
+                    <div class="tier-card featured">
+                        <div class="tier-name display-font">APOLLO</div>
+                        <div class="tier-amount">$251 - $499</div>
+                        <ul class="tier-benefits">
+                            <li>Everything in Hermes</li>
+                            <li>Company name/logo on the robot</li>
+                            <li>Featured in team social media</li>
+                            <li>Recognition at school events</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Sponsor Now</a>
+                    </div>
+                    <div class="tier-card">
+                        <div class="tier-name display-font">ZEUS</div>
+                        <div class="tier-amount">$500+</div>
+                        <ul class="tier-benefits">
+                            <li>Everything in Apollo</li>
+                            <li>Team merchandise (shirt & pins)</li>
+                            <li>Prominent logo placement</li>
+                            <li>Invitation to attend competitions</li>
+                            <li>Personal thank-you from team</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Sponsor Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="budget-section">
+            <div class="container">
+                <div class="reveal">
+                    <div class="section-label">Financial Transparency</div>
+                    <h2 class="section-title">Where Your Money Goes</h2>
+                    <p class="section-subtitle">We believe in total transparency. Here's our exact 2025-26 budget
+                        breakdown with every dollar accounted for.</p>
+                </div>
+                <div class="budget-split reveal-stagger">
+                    <div class="budget-card">
+                        <h3>Expenses</h3>
+                        <div class="budget-item">
+                            <span class="budget-label">Robot & Field</span>
+                            <span class="budget-amount">$4,050</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-label">Competition Season</span>
+                            <span class="budget-amount">$59,600</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-label">Off-Season Events</span>
+                            <span class="budget-amount">$645</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-label">Merchandise</span>
+                            <span class="budget-amount">$1,100</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-label">Total Needed</span>
+                            <span class="budget-amount">$65,395</span>
+                        </div>
+                    </div>
+                    <div class="budget-card">
+                        <h3>Funding Sources</h3>
+                        <div class="budget-item">
+                            <span class="budget-label">District Funding</span>
+                            <span class="budget-amount">$10,000</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-label">Grants</span>
+                            <span class="budget-amount">$3,500</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-label">Current Sponsors</span>
+                            <span class="budget-amount">$8,500</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-label">Fundraising Events</span>
+                            <span class="budget-amount">$2,000</span>
+                        </div>
+                        <div class="budget-item">
+                            <span class="budget-label">Total Secured</span>
+                            <span class="budget-amount">$24,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="funding-gap reveal">
+                    <div class="funding-gap-amount">$41,395</div>
+                    <div class="funding-gap-label">Sponsorship Gap to World Championship</div>
+                    <p
+                        style="margin-top: var(--space-4); color: var(--text-muted); max-width: 600px; margin-left: auto; margin-right: auto;">
+                        This includes full competition season travel (2 regionals + Worlds in Houston), registration
+                        fees, meals, and ensuring every student can participate regardless of financial need.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="impact-section">
+            <div class="container">
+                <div class="reveal">
+                    <div class="section-label">Building the Future</div>
+                    <h2 class="section-title">Community Impact</h2>
+                    <p class="section-subtitle">We're not just building robots. We're building a pipeline of STEM talent
+                        in a rural community with limited tech opportunities.</p>
+                </div>
+                <div class="impact-grid reveal-stagger">
+                    <div class="impact-card">
+                        <h3>
+                            <svg class="impact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                            Program Growth
+                        </h3>
+                        <ul>
+                            <li>Established FTC team at middle school</li>
+                            <li>Launched Lego League at Morris Memorial Center</li>
+                            <li>20+ active team members and growing</li>
+                            <li>K-12 STEM pipeline in development</li>
+                            <li>Growing despite district enrollment decline</li>
+                        </ul>
+                    </div>
+                    <div class="impact-card">
+                        <h3>
+                            <svg class="impact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                            Community Outreach
+                        </h3>
+                        <ul>
+                            <li>Board of Education demonstrations</li>
+                            <li>Science Fair exhibitions</li>
+                            <li>RCS STEM Night participation</li>
+                            <li>Bank of Greene County demos</li>
+                            <li>Kinderhook Elks Lodge presentations</li>
+                            <li>Middle School Arbor Day events</li>
+                            <li>Community parade participation</li>
+                        </ul>
+                    </div>
+                    <div class="impact-card">
+                        <h3>
+                            <svg class="impact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                            </svg>
+                            2025 Goals
+                        </h3>
+                        <ul>
+                            <li>Return to World Championship in Houston</li>
+                            <li>Expand our youth outreach programs</li>
+                            <li>Upgrade prototyping and fabrication tools</li>
+                            <li>Train and mentor new team members</li>
+                            <li>Enhance robot performance capabilities</li>
+                            <li>Strengthen partnerships with local industry</li>
+                        </ul>
+                    </div>
+                    <div class="impact-card">
+                        <h3>
+                            <svg class="impact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            Zero-Cost Participation
+                        </h3>
+                        <ul>
+                            <li>No student fees for team membership</li>
+                            <li>All travel expenses covered</li>
+                            <li>Team uniforms provided at no cost</li>
+                            <li>Meals at competitions included</li>
+                            <li>Equipment and tools provided</li>
+                            <li>Ensuring financial need never limits talent</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <div class="reveal">
+                    <div class="section-label">Leadership</div>
+                    <h2 class="section-title">The Humans Behind the Robots</h2>
+                </div>
+                <div class="team-grid reveal-stagger">
+                    <div class="team-card">
+                        <div class="team-role">Team Captain</div>
+                        <div class="team-name">Reed Fisch</div>
+                        <div class="team-bio">2024 Safety Captain Award recipient and current team leader. Driving
+                            innovation and excellence as we push toward our next World Championship.</div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-role">Head Coach & Founder</div>
+                        <div class="team-name">Sandra Fischer</div>
+                        <div class="team-bio">Co-founder and lead mentor since 2017. Building championship-caliber STEM
+                            opportunities in Columbia County and inspiring the next generation of engineers.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="reveal">
+                    <div class="section-label">Get In Touch</div>
+                    <h2 class="section-title">Partner With Us</h2>
+                    <p class="section-subtitle">Ready to invest in the future of STEM in Columbia County? We'd love to
+                        hear from you.</p>
+                </div>
+                <div class="contact-grid reveal-stagger">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h3>Location</h3>
+                            <p>Chatham High School<br>50 Woodbridge Ave<br>Chatham, NY 12037</p>
+                        </div>
+                        <div class="contact-card">
+                            <h3>Email</h3>
+                            <p>Coach: <a href="mailto:fischers@chatham.k12.ny.us">fischers@chatham.k12.ny.us</a></p>
+                            <p>Captain: <a href="mailto:Reed.L.Fisch@gmail.com">Reed.L.Fisch@gmail.com</a></p>
+                        </div>
+                        <div class="contact-card">
+                            <h3>Phone</h3>
+                            <p><a href="tel:5183922400">(518) 392-2400 x1038</a></p>
+                        </div>
+                        <div class="contact-card">
+                            <h3>Watch Us Compete</h3>
+                            <p>Match Videos: <a href="https://www.thebluealliance.com/team/6621" target="_blank"
+                                    rel="noopener">TheBlueAlliance.com/team/6621</a></p>
+                            <p>YouTube: <a href="https://youtube.com/@ArtemisFrc6621" target="_blank"
+                                    rel="noopener">@ArtemisFrc6621</a></p>
+                        </div>
+                        <div class="contact-card">
+                            <h3>Mail Sponsorship Forms</h3>
+                            <p>Make checks payable to: <strong>CHS-Robotics</strong></p>
+                            <p>Attn: Sandra Fischer<br>50 Woodbridge Ave<br>Chatham, NY 12037</p>
+                            <p style="margin-top: var(--space-4); font-size: var(--text-xs);">Please include your logo
+                                file (image files preferred, high-resolution prints accepted).</p>
+                        </div>
+                    </div>
+                    <div class="sponsor-form">
+                        <h3 style="margin-bottom: var(--space-4);">Express Interest Form</h3>
+                        <p style="font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--space-6);">
+                            Fill out the form below and we'll reach out within 24 hours to discuss partnership
+                            opportunities. For immediate questions, email us directly at <a
+                                href="mailto:fischers@chatham.k12.ny.us"
+                                style="color: var(--accent);">fischers@chatham.k12.ny.us</a></p>
+                        <form id="sponsorForm">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="_replyto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="tier">Sponsorship Tier</label>
+                                <select id="tier" name="tier">
+                                    <option value="">Select a tier</option>
+                                    <option value="hermes">Hermes (&lt;$250)</option>
+                                    <option value="apollo">Apollo ($251-$499)</option>
+                                    <option value="zeus">Zeus ($500+)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"
+                                    placeholder="Questions or special requests..."></textarea>
+                            </div>
+                            <input type="hidden" name="_subject" value="New Sponsorship Inquiry - Artemis 6621">
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Interest</button>
+                            <div class="form-success" id="formSuccess">
+                                Thank you! We'll be in touch within 24 hours with sponsorship details.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sponsors-section">
+            <div class="container">
+                <div class="sponsors-label">Powered by our incredible sponsors</div>
+                <div class="sponsors-grid">
+                    <span class="sponsor-name">Fischer Family</span>
+                    <span class="sponsor-name">Wall Family</span>
+                    <span class="sponsor-name">Levy Family</span>
+                    <span class="sponsor-name">MacGowan Family</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 class="display-font">ARTEMIS 6621</h3>
+                    <p>Columbia County's only FIRST Robotics Competition team. Proving that championship teams can come
+                        from anywhere.</p>
+                    <div class="social-links">
+                        <a href="https://youtube.com/@ArtemisFrc6621" target="_blank" rel="noopener"
+                            aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.thebluealliance.com/team/6621" target="_blank" rel="noopener"
+                            aria-label="The Blue Alliance">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" />
+                            </svg>
+                        </a>
+                        <a href="https://sites.google.com/chatham.k12.ny.us/fischer/artemis-robotics" target="_blank"
+                            rel="noopener" aria-label="Team Website">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#story">About</a></li>
+                        <li><a href="#sponsor">Sponsor</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://www.firstinspires.org/robotics/frc" target="_blank" rel="noopener">About
+                                FRC</a></li>
+                        <li><a href="https://www.thebluealliance.com/team/6621" target="_blank" rel="noopener">Match
+                                Results</a></li>
+                        <li><a href="https://youtube.com/@ArtemisFrc6621" target="_blank" rel="noopener">YouTube
+                                Channel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:fischers@chatham.k12.ny.us">Email Coach</a></li>
+                        <li><a href="tel:5183922400">Call School</a></li>
+                        <li>50 Woodbridge Ave<br>Chatham, NY 12037</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Artemis 6621, Chatham High School Robotics. All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
