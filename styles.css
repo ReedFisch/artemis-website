@@ -237,14 +237,14 @@ nav {
 /* Hero */
 .hero {
   margin-top: 72px;
-  min-height: 90vh;
+  min-height: auto;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   position: relative;
-  padding: var(--space-24) 0;
+  padding: var(--space-24) 0 var(--space-32) 0;
   background: linear-gradient(135deg, var(--bg) 0%, #0D0D0E 100%);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero::before {
