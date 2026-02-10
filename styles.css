@@ -327,10 +327,11 @@ nav {
 
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-6);
   margin-top: var(--space-12);
   padding-top: var(--space-12);
+  padding-bottom: var(--space-8);
   border-top: 1px solid var(--border);
 }
 
@@ -351,6 +352,12 @@ nav {
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .btn-group {
