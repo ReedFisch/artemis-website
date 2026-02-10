@@ -404,7 +404,12 @@
                             opportunities. For immediate questions, email us directly at <a
                                 href="mailto:fischers@chatham.k12.ny.us"
                                 style="color: var(--accent);">fischers@chatham.k12.ny.us</a></p>
-                        <form id="sponsorForm">
+                        <form id="sponsorForm" action="https://formsubmit.co/reed.l.fisch@gmail.com" method="POST">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="New Sponsorship Inquiry - Artemis 6621">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+
                             <div class="form-group">
                                 <label for="name">Your Name *</label>
                                 <input type="text" id="name" name="name" required>
@@ -415,7 +420,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="email">Email *</label>
-                                <input type="email" id="email" name="_replyto" required>
+                                <input type="email" id="email" name="email" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Phone</label>
@@ -435,11 +440,7 @@
                                 <textarea id="message" name="message"
                                     placeholder="Questions or special requests..."></textarea>
                             </div>
-                            <input type="hidden" name="_subject" value="New Sponsorship Inquiry - Artemis 6621">
                             <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Interest</button>
-                            <div class="form-success" id="formSuccess">
-                                Thank you! We'll be in touch within 24 hours with sponsorship details.
-                            </div>
                         </form>
                     </div>
                 </div>
